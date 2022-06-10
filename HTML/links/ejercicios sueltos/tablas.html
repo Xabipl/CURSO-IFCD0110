@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 6px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        /* Prueba de comentario para primera fila de la tabla */
+        #tr1 {
+            text-align: center;
+            background-color: aqua;
+            text-decoration:dashed;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ejercicio Tablas</h1>
+    <!--Realización de ejercicio tablas con un tabla de 3 filas y 4 columnas-->
+    <table>
+        <tr id="tr1">
+            <td>
+                Nombre
+            </td>
+            <td>
+                Apellido
+            </td>
+            <td>
+                DNI
+            </td>
+            <td>
+                Teléfono
+            </td>
+        </tr>
+        <tr id="tr2">
+            <td>
+                Nombre
+            </td>
+            <td>
+                Apellido
+            </td>
+            <td>
+                DNI
+            </td>
+            <td>
+                Teléfono
+            </td>
+        </tr>
+        <!--Combinar celdas-->
+        <tr id="tr3">
+            <td colspan="2">
+                Paco
+            </td>
+            <td>
+                DNI
+            </td>
+            <!--ejercicio celda en columna-->
+            <td rowspan="2">
+                Teléfono
+            </td>
+        </tr>
+        <tr id="tr4">
+            <td>
+                Nombre
+            </td>
+            <td>
+                Apellido
+            </td>
+            <td>
+                DNI
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo Scroll smooth</title>
+  <style>
+  /*CSS para hacer que la página baje fluida*/
+  html{
+    scroll-behavior: smooth;
+  }
+  </style>
+</head>
+
+<body>
+  <!-- Esto es un comentario -->
+  <ul>
+    <!--Enlaces internos de la página-->
+    <li><a href="#section-01">Section 01</a></li>
+    <li><a href="#section-02">Section 02</a></li>
+    <li><a href="#section-03">Section 03</a></li>
+    <li><a href="#section-04">Section 04</a></li>
+  </ul>
+  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  <h3 id="section-01">Section 01</h3>
+  <p>...</p>
+  <h3 id="section-02">Section 02</h3>
+  <p>...</p>
+  <h3 id="section-03">Section 03</h3>
+  <p>...</p>
+  <h3 id="section-04">Section 04</h3>
+
+  <script>
+    let buttons = document.querySelectorAll('a');
+    buttons.forEach((button) => {
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        let target = e.currentTarget.getAttribute('href');
+
+        document.querySelector(target).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+  <script src="smoothscroll.js"></script>
+</body>
+
+</html>
