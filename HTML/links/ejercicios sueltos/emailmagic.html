@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Magic</title>
+    <style>
+        /*Imagen del Principio*/
+        .center {
+            display: block;
+        }
+
+        #email {
+            height: auto;
+            width: 20%;
+            border-color: #143642;
+            border: right 50px;
+            border: left 50px;
+        }
+
+        /*Texto con Titulo + Texto normal*/
+        div.a {
+            margin: auto;
+        }
+
+        div.b {
+            margin: auto;
+
+        }
+
+        /*Tabla con dos imagenes*/
+        div.c {
+            align-items: center;
+        }
+
+        #imagen2 {
+            border-left-style: solid;
+            border-left-color: #143642;
+            border-left-width: 100px;
+            border-right-style: solid;
+            border-right-color: #143642;
+            border-right-width: 100px;
+            border-bottom-style: solid;
+            border-bottom-color: #143642;
+            border-bottom-width: 15px;
+            border-top-style: solid;
+            border-top-color: #143642;
+            border-top-width: 15px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+
+        }
+
+        #imagen3 {
+            border-left-style: solid;
+            border-left-color: #143642;
+            border-left-width: 100px;
+            border-right-style: solid;
+            border-right-color: #143642;
+            border-right-width: 100px;
+            border-bottom-style: solid;
+            border-bottom-color: #143642;
+            border-bottom-width: 15px;
+            border-top-style: solid;
+            border-top-color: #143642;
+            border-top-width: 15px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        /*Pie de página*/
+        .boton {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Imagen del Principio-->
+    <div style="margin-left: 25%;margin-right: 25%;">
+        <img src="../img/header-image.png" id="email" class="center"
+            style="width: 20%;">
+    </div>
+    <!--Texto con Titulo + Texto normal-->
+    <div class="a" style="margin-left: 25%;margin-right: 25%;">
+        <h1 class="center" style="font-family:Arial, Helvetica, sans-serif">Lorem ipsum dolor sit amet</h1>
+    </div>
+    <div class="b" style="margin-left: 25%;margin-right: 25%;">
+        <p style="font-family:Arial, Helvetica, sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Quisque dui orci, semper id tortor vel, fringilla
+            mollis sem. Morbi nec tincidunt dolor. Nam interdum enim vitae odio suscipit dapibus. Sed sodales sem eu
+            ultricies laoreet. Integer sit amet porta est. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Vivamus bibendum leo leo, nec lobortis felis tincidunt a.</p>
+    </div>
+    <!--Tabla con dos imagenes-->
+    <div class="c" style="margin-left: 25%;margin-right: 25%;">
+        <table cellspacing="20">
+            <tr class="tabla1">
+                <th style="background-color: #143642;"><img src="../img/image-2.png" id="imagen2"
+                        style="height:30%; width: auto;"></th>
+                <th style="background-color: #143642;"><img src="../img/image3.png" id="imagen3"
+                        style="height:30%;width: auto;">
+                </th>
+
+            </tr>
+            <tr>
+                <td style="padding: 5%;font-family: Arial, Helvetica, sans-serif;">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Quisque dui orci,
+                    semper id tortor vel,
+                    fringilla mollis sem. Morbi nec tincidunt dolor. Nam interdum enim vitae odio suscipit dapibus. Sed
+                    sodales sem eu ultricies laoreet.</td>
+                <td style="padding: 5%;font-family: Arial, Helvetica, sans-serif;">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Quisque dui orci,
+                    semper id tortor vel,
+                    fringilla mollis sem. Morbi nec tincidunt dolor. Nam interdum enim vitae odio suscipit dapibus. Sed
+                    sodales sem eu ultricies laoreet.</td>
+            </tr>
+        </table>
+    </div>
+    <!--Pie de página-->
+    <footer>
+        <div
+            style="background-color:#D95857;color: white;padding: 7px;margin-left: 25%;margin-right: 25%; height: 100px;">
+            <p style="margin-left: 2%;float:left;margin-top: 2%;font-family:Helvetica;">© Someone, somewhere2020<br><a
+                    href="Unsubscribe">Unsubscribe</a> to
+                thisnewsletter instantly</p>
+            <img src="../img/facebook.png" alt="facebook" class="boton"
+                style="height: 45%; width: auto;padding-top: 2%;margin-right: 5%;">
+            <img src="../img/twitter.png" alt="twitter" class="boton"
+                style="height: 45%; width: auto;padding-top: 2%;margin-right: 1%;">
+        </div>
+    </footer>
+</body>
+
+</html>

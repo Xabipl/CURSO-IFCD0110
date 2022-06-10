@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tablas + formularios</title>
+    <style>
+        /*CSS para las tablas*/
+        table,
+        tr,
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tablas + Formularios</h1>
+    <h2>Tabla</h2>
+    <form>
+        <table>
+            <tr>
+                <th>Apartado</th>
+                <th>Espacio de escritura</th>
+            </tr>
+            <!--Apartado Nombre-->
+            <tr>
+                <td><label for="Name">Nombre:</label></td>
+                <td><input type="text" name="Name" id="Name" placeholder="Pon aquí tu nombre"required></td>
+            </tr>
+            <!--Apartado Apellido-->
+            <tr>
+                <td><label for="Apellido">Apellido:</label></td>
+                <td><input type="text" name="Apellido" id="Apellido" placeholder="Pon aquí tu apellido" required></td>
+            </tr>
+            <!--Apartado Email-->
+            <tr>
+                <td><label for="Email">Email:</label></td>
+                <td><input type="email" name="Email" id="Email" placeholder="Pon aquí tu email"  required></td>
+            </tr>
+            <tr>
+                <td><label for="Calendario">Calendario:</label></td>
+                <td><input type="date" id="date" name="date"></td>
+            </tr>
+            <!--Apartado Edad-->
+            <tr>
+                <td><label for="Edad">Edad:</label></td>
+                <td><input type="number" name="Age" id="Age" placeholder="Pon aquí tu edad" min="1" max="100" required></td>
+            </tr>
+
+        </table><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
